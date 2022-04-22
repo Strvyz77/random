@@ -253,13 +253,13 @@ MainWindow:Toggle("Collect Loot Bags", {flag = 'Lootbags', default = _G.Lootbags
         end
     end
 end)
-MainWindow:Button("Stat Tracker", function()
+MainWindow:Button("Stats Tracker", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/dPXXyp4A'))()
     wait(60)
     warn("60s has PASSED!")
 end)
 
-MainWindow:Button("POSSIBLE Lag reduction", function()
+MainWindow:Button("Lag Reduction", function()
     game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs["Coin Rewards HUD"].Disabled = true
     if game:GetService("Workspace"):FindFirstChild("__DEBRIS") then
       game:GetService("Workspace")["__DEBRIS"]:Destroy()
@@ -319,6 +319,10 @@ EggsWindow:Button("Teleport Gamepass", function()
     table.insert(main,18674296)
     table.insert(main,18674298)
     table.insert(main,18674321)
+end)
+
+EggsWindow:Button("Speed Hack", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 160
 end)
 
 EggsWindow:Button("Start Dupe", function()
